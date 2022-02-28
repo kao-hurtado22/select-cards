@@ -13,7 +13,7 @@ window.onload = () => {
       myCard.innerHTML = "";
     }
     let inputValueCards = parseInt(
-      document.getElementById("numberusercards").value
+      document.getElementById("numbercards").value
     );
 
     if (inputValueCards === 0) {

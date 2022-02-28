@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 153, 0);
+  background-color: rgb(51, 138, 51);
 }
 .container {
   margin: 0;
@@ -12,24 +12,19 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
 }
 .text-original {
-  /* margin: 0; */
   display: inline;
   width: 100%;
   height: 50px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(255, 250, 215);
-  /* position: absolute; */
-  /* background: linear-gradient(180deg, rgb(24, 61, 24, 0.7) 0%, rgba(0,114,0,0.1) 80%, rgba(0,114,0,0) 100%);     */
-  /* box-shadow: 0px 5px 8px rgba(12, 44, 5, 0.4);   */
-  /* text-align: center; */
+  font-family: serif;
+  color: rgb(0, 0, 0);
 }
 .bubble-sort-log {
   width: 100%;
   height: 50px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(255, 250, 215);
+  font-family: serif;
+  color: rgb(0, 0, 0);
 }
-#numberusercards {
+#numbercards {
   display: inline;
   width: 70px;
   height: 25px;
@@ -43,15 +38,14 @@ ul {
   display: grid;
   align-items: center;
   justify-items: center;
-  gap: 1rem;
   grid-auto-flow: dense;
   grid-auto-rows: 18rem;
   grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
   font-size: 2.5rem;
 }
 ul li:nth-child(1) {
-  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
-  color: #fff;
+  font-family: serif;
+  color: rgb(0, 0, 0);
   list-style: none;
 }
 .draw-button,
@@ -60,11 +54,10 @@ ul li:nth-child(1) {
   height: 30px;
   border-radius: 5px;
   border: none;
-  color: rgb(114, 206, 94);
-  background-color: rgb(46, 80, 42);
-  border-top: 1px solid rgba(92, 153, 86, 0.6);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 3px 5px rgba(18, 65, 7, 0.8);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-top: 1px solid rgba(141, 163, 139, 0.6);
+  box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.8);
 }
 .draw-button:hover,
 .sort-button:hover {
@@ -74,8 +67,8 @@ ul li:nth-child(1) {
   border: none;
   color: rgb(41, 70, 38);
   background-color: rgb(214, 255, 223);
-  border: 1px solid rgb(171, 255, 171);
-  box-shadow: 1px 3px 5px rgb(98, 206, 74);
+  border: 1px solid rgb(117, 119, 117);
+  box-shadow: 1px 3px 5px rgb(111, 124, 108);
 }
 .draw-button:active,
 .sort-button:active {
@@ -83,9 +76,9 @@ ul li:nth-child(1) {
   height: 30px;
   border-radius: 5px;
   border: none;
-  color: rgb(252, 252, 252);
-  background-color: rgb(0, 218, 47);
-  border: 1px solid rgb(14, 167, 14);
+  color: rgb(0, 0, 0);
+  background-color: rgb(249, 255, 251);
+  border: 1px solid rgb(80, 85, 80);
   box-shadow: 1px 1px 10px rgb(47, 255, 0);
 }
 
@@ -95,8 +88,8 @@ ul li:nth-child(1) {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 220px;
-  width: 150px;
+  height: 180px;
+  width: 120px;
   font-size: 3rem;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -131,22 +124,26 @@ ul li:nth-child(1) {
   transform: rotate(180deg);
 }
 .spades::before {
+  color: black;
   content: "\2660";
   width: 40%;
   height: 100%;
 }
 .spades::after {
+  color: black;
   content: "\2660";
   width: 160%;
   height: 100%;
   transform: rotate(180deg);
 }
 .clubs::before {
+  color: black;
   content: "\2663";
   width: 40%;
   height: 100%;
 }
 .clubs::after {
+  color: black;
   content: "\2663";
   width: 160%;
   height: 100%;
